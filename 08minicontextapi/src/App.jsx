@@ -6,6 +6,8 @@ import Login from './components/Login'
 import Profile from './components/Profile'
 import UserContextProvider from './context/UserContextProvider'
 
+//In the App component, we wrap the application components (Login and Profile) with the UserContextProvider to make the user context available to them. This setup allows components like Login and Profile to access and update the user state without prop drilling, making the code more organized and efficient.
+
 function App() {
   const [count, setCount] = useState(0)
 
